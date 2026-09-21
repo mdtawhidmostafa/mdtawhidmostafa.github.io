@@ -1,51 +1,147 @@
-# Md. Tawhid Mostafa — Portfolio
+<div align="center">
+  <img src="assets/favicon.png" alt="Md. Tawhid Mostafa Logo" width="88" height="88">
 
-A responsive, dependency-free portfolio website prepared for GitHub Pages.
+  # Md. Tawhid Mostafa — Portfolio
 
-## What is included
+  **Software Engineer · AI & Computer Vision Engineer**
 
-- `index.html` — main portfolio
-- `styles.css` — responsive styling, dark/light mode, animations
-- `script.js` — navigation, theme, reveal effects, copy-email interaction
-- `404.html` — GitHub Pages friendly 404 page
-- `assets/profile.webp` — optimized profile photo
-- `assets/Tawhid-Mostafa-Resume.pdf` — downloadable resume
-- `assets/favicon.png` — favicon
+  A modern, responsive personal portfolio showcasing my professional experience, applied AI work, computer vision projects, research, technical skills, education, and certifications.
 
-## Publish on GitHub Pages
+  [![Live Portfolio](https://img.shields.io/badge/Live_Portfolio-Visit_Site-61F1D5?style=for-the-badge&logo=githubpages&logoColor=111827)](https://mdtawhidmostafa.github.io/)
+  [![GitHub](https://img.shields.io/badge/GitHub-mdtawhidmostafa-181717?style=for-the-badge&logo=github)](https://github.com/mdtawhidmostafa)
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Tawhid_Mostafa-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/tawhid-mostafa)
+</div>
 
-### Option A — user site (cleanest URL)
+---
 
-Your resume currently links to the GitHub account `mdtawhidmostafa`. For that account, create a **public** repository named exactly:
+## About This Portfolio
 
-`mdtawhidmostafa.github.io`
+This repository contains the source code for my personal portfolio website. It is designed to present my work in **software engineering, artificial intelligence, computer vision, full-stack development, and applied research** in a clean and accessible format.
 
-Upload the **contents of this folder** to the repository root and push to the `main` branch. In GitHub, open **Settings → Pages**, choose **Deploy from a branch**, select `main` and `/ (root)`, then save.
+The site is built with lightweight web technologies and does not depend on a frontend framework or build pipeline, making it fast to load, easy to maintain, and straightforward to deploy with GitHub Pages.
 
-The default URL will be:
+## Highlights
 
-`https://mdtawhidmostafa.github.io/`
+- Fully responsive design for mobile, tablet, laptop, and desktop screens
+- Dark and light theme support with saved theme preference
+- Professional portfolio sections for experience, projects, research, skills, education, and certifications
+- Smooth navigation, scroll progress indicator, reveal animations, and back-to-top interaction
+- Optimized profile imagery and responsive hero presentation
+- Direct links to project repositories, publication, resume, GitHub, LinkedIn, and email
+- GitHub Pages friendly with a custom `404.html`
+- Built without external JavaScript frameworks or a build step
 
-To have the URL `https://tawhid-mostafa.github.io/`, the GitHub user or organization itself must be named `tawhid-mostafa`, and its repository must be `tawhid-mostafa.github.io`.
+## Selected Work
 
-### Option B — project site
+| Project | Focus | Core Technologies |
+| --- | --- | --- |
+| [AI-Monitored Physiotherapy Home Assistant](https://github.com/mdtawhidmostafa/Physiotherapy_Home_Assistant_Solution) | AI-assisted physiotherapy assessment from exercise videos | Django, TensorFlow/Keras, 3D CNN, Bootstrap |
+| [AI Vision Image Analysis Platform](https://github.com/mdtawhidmostafa/AI_Vision_Image_Analysis_Platform) | Full-stack object detection and AI-assisted image analysis | Next.js, Django REST, YOLOv8/YOLOv11, MySQL, Docker |
+| [Online Junior Secondary School Platform](https://github.com/mdtawhidmostafa/Junior_Secondary_School) | Role-based school management system | Django, MySQL |
 
-You can upload the same files to any public repository, for example `portfolio`. GitHub Pages will then usually publish it at:
+## Research & Publication
 
-`https://mdtawhidmostafa.github.io/portfolio/`
+My portfolio also presents work from a government-funded AI research project focused on using **2D video and deep-learning models for physiotherapy exercise assessment**.
 
-This site uses relative asset paths, so it works in either setup without code changes.
+**MobiPhysio: A 2D Video Dataset of Physiotherapy Exercises for AI-Driven Assessment and Monitoring**  
+*Data in Brief, Elsevier · 2026*
 
-## Quick local preview
+The project involved dataset preparation, preprocessing, model training, and evaluation across architectures including **3D CNN, ConvLSTM, and LSTM**.
 
-Open `index.html` directly in a browser, or run a simple local server from this folder:
+[View publication](https://doi.org/10.1016/j.dib.2026.112635)
+
+## Technology Stack
+
+**AI / Machine Learning / Computer Vision**  
+TensorFlow · Keras · OpenCV · CNN · 3D CNN · ConvLSTM · LSTM · YOLOv8 · YOLOv11 · Model Evaluation
+
+**Frontend & Backend**  
+React · Next.js · Django · Django REST Framework · ASP.NET Core MVC · REST APIs · JWT Authentication
+
+**Data & Infrastructure**  
+PostgreSQL · MySQL · SQLite · Supabase · Docker · Docker Compose · Git · GitHub
+
+**Programming Languages**  
+Python · JavaScript · C# · Java · C++
+
+## Project Structure
+
+```text
+.
+├── assets/
+│   ├── favicon.png
+│   ├── profile.webp
+│   ├── profile2.webp
+│   └── certification assets
+├── 404.html
+├── index.html
+├── script.js
+├── styles.css
+├── DEPLOY-BANGLA.md
+└── README.md
+```
+
+## Run Locally
+
+No installation or build step is required.
+
+### Option 1 — Open directly
+
+Clone the repository and open `index.html` in your browser.
+
+```bash
+git clone https://github.com/mdtawhidmostafa/mdtawhidmostafa.github.io.git
+cd mdtawhidmostafa.github.io
+```
+
+### Option 2 — Start a local server
 
 ```bash
 python -m http.server 8000
 ```
 
-Then visit `http://localhost:8000`.
+Then open:
 
-## Before publishing
+```text
+http://localhost:8000
+```
 
-Review the visible email address, project links, resume PDF and text. The site intentionally does not display a public phone number on the page.
+## Deployment
+
+This portfolio is configured for **GitHub Pages**.
+
+1. Push the project to the `main` branch of `mdtawhidmostafa.github.io`.
+2. Open **Repository Settings → Pages**.
+3. Select **Deploy from a branch**.
+4. Choose the `main` branch and `/ (root)` directory.
+5. Save the configuration.
+
+The portfolio will be available at:
+
+**https://mdtawhidmostafa.github.io/**
+
+## Browser & Responsive Support
+
+The interface is designed to adapt across modern browsers and common screen sizes, including:
+
+- Mobile phones
+- Tablets
+- Laptops
+- Desktop displays
+
+Responsive layouts and breakpoints are handled entirely through CSS.
+
+## Contact
+
+I am open to opportunities and collaborations involving **software engineering, applied AI, computer vision, and research-driven product development**.
+
+- **Portfolio:** [mdtawhidmostafa.github.io](https://mdtawhidmostafa.github.io/)
+- **GitHub:** [github.com/mdtawhidmostafa](https://github.com/mdtawhidmostafa)
+- **LinkedIn:** [linkedin.com/in/tawhid-mostafa](https://linkedin.com/in/tawhid-mostafa)
+- **Email:** [mmttawhid@gmail.com](mailto:mmttawhid@gmail.com)
+
+---
+
+<div align="center">
+  <sub>Designed and developed by <strong>Md. Tawhid Mostafa</strong>.</sub>
+</div>
