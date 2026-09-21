@@ -86,6 +86,14 @@
   onScroll();
   window.addEventListener('scroll', onScroll, { passive: true });
 
+  // The #top target is a fixed header, so native anchor navigation can be
+  // unreliable on some browsers. Scroll the document explicitly instead.
+  backTop?.addEventListener('click', event => {
+    event.preventDefault();
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    history.replaceState(null, '', `${location.pathname}${location.search}#top`);
+  });
+
   copyEmail?.addEventListener('click', async () => {
     const email = copyEmail.dataset.email;
     try {
@@ -101,20 +109,7 @@
     }
   });
 
-  const reduceMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)').matches;
-  if (!reduceMotion && window.matchMedia?.('(hover: hover)').matches) {
-    document.querySelectorAll('[data-tilt]').forEach(card => {
-      card.addEventListener('mousemove', event => {
-        const rect = card.getBoundingClientRect();
-        const x = (event.clientX - rect.left) / rect.width - 0.5;
-        const y = (event.clientY - rect.top) / rect.height - 0.5;
-        const rotateY = x * 3.2;
-        const rotateX = y * -3.2;
-        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-      });
-      card.addEventListener('mouseleave', () => { card.style.transform = ''; });
-    });
-  }
+  // Keep the hero portrait static so browsers render the image and caption sharply.
 
   if (year) year.textContent = new Date().getFullYear();
 })();
